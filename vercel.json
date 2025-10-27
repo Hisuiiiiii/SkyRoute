@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [{ "src": "*.php", "use": "@vercel/php" }],
+  "routes": [
+    { "src": "/login", "dest": "/login.php" },
+    { "src": "/register", "dest": "/register.php" },
+    { "src": "/api/(.*)", "dest": "/api/$1.php" },
+    { "src": "/(.*)", "dest": "/index.php" }
+  ]
+}
